@@ -25,7 +25,7 @@ SECRET_KEY = '6a7q%&us76#yoj6idu9l74$b7@k@zez^jh6vx#sv5l&@m)65sz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [] # здесь потом нужно добавить имя хоста сервера, на котором размещен сайт
+ALLOWED_HOSTS = ['127.0.0.1', 'gentle-island-14599.herokuapp.com'] # здесь потом нужно добавить имя хоста сервера, на котором размещен сайт
                    # например, ['127.0.0.1', 'locotravel.ru']
 
 
