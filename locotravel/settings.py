@@ -86,17 +86,6 @@ WSGI_APPLICATION = 'locotravel.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'locotravel',
-        'USER': 'msffoqifkaibqe',
-        'PASSWORD': '3956bb28107da0f07f35ceaa16ee5837d073e5b0a7607a74686d5ded9bc73836',
-        'HOST': 'ec2-107-22-183-40.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -148,6 +137,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+# add this
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-# default='postgres://msffoqifkaibqe:3956bb28107da0f07f35ceaa16ee5837d073e5b0a7607a74686d5ded9bc73836@ec2-107-22-183-40.compute-1.amazonaws.com:5432/da49r4uepaqsm7'
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+DATABASES['default']['CONN_MAX_AGE'] = 500
