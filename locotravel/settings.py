@@ -149,4 +149,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config(default='postgres://msffoqifkaibqe:3956bb28107da0f07f35ceaa16ee5837d073e5b0a7607a74686d5ded9bc73836@ec2-107-22-183-40.compute-1.amazonaws.com:5432/da49r4uepaqsm7')
+DATABASES['default'] = dj_database_url.config()
+# default='postgres://msffoqifkaibqe:3956bb28107da0f07f35ceaa16ee5837d073e5b0a7607a74686d5ded9bc73836@ec2-107-22-183-40.compute-1.amazonaws.com:5432/da49r4uepaqsm7'
