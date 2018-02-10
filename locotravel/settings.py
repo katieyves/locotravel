@@ -88,17 +88,6 @@ WSGI_APPLICATION = 'locotravel.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'da49r4uepaqsm7',
-#         'USER': 'msffoqifkaibqe',
-#         'PASSWORD': '3956bb28107da0f07f35ceaa16ee5837d073e5b0a7607a74686d5ded9bc73836',
-#         'HOST': 'ec2-107-22-183-40.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
