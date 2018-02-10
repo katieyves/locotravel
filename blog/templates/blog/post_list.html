@@ -1,19 +1,62 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+	<head>
+		<title>LOCOtravel - живи, летай, путешествуй! Дешевые авиабилеты, отели</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://use.fontawesome.com/ce9f02c6d3.js"></script>
+	</head>
+	<body>
+		<div class="header">
+  
+  <div class="logo">L<span class='logo--o'>o</span><span class='logo--c'>c</span><span class='logo--o2'>o</span><span class='logo--travel'>travel</span></div>
+  <div class="top_menu">
+    <ul>
+      <a href="#"><li>ТУРЫ</li></a>
+      <a href="#"><li>АВИАБИЛЕТЫ</li></a>
+      <a href="#"><li>ОТЕЛИ</li></a>
+      <a href="#"><li>СТРАХОВКА</li></a>
+      <a href="#"><li>ЭКСКУРСИИ</li></a>
+      <a href="#"><li>ДРУГИЕ УСЛУГИ</li></a>
+    </ul>
+  </div>
+  <div class='main_bg'></div>
+  <div class="tab_menu">
+    <div class="tab_menu--top">
+      <div class="tab-menu--top--tours" title="Выбери тур"><i class="fa fa-suitcase" aria-hidden="true"></i>
+      </div>
+      <div class="tab-menu--top--avia" title="Выбери перелет"><i class="fa fa-plane" aria-hidden="true"></i>
+      </div>
+      <div class="tab-menu--top--hotels" title="Выбери отель"><i class="fa fa-bed" aria-hidden="true"></i>
+      </div>
     </div>
-{% endfor %}
+    <div class="tab_menu--tabs">
+      <div class="tab_menu--tabs--tab tours">
+        <script src="//c26.travelpayouts.com/content?promo_id=1150&shmarker=65714" charset="utf-8" async></script>
+      </div>
+      <div class="tab_menu--tabs--tab avia">
+        <script charset="utf-8" src="//www.travelpayouts.com/widgets/2f56960f2c23317ec0b3ec146716cad3.js?v=1065" async></script>
+      </div>
+      <div class="tab_menu--tabs--tab hotels">
+        <script charset="utf-8" src="//www.travelpayouts.com/widgets/09af0915fa1c963a7d5b965f4f5bb462.js?v=1065" async></script>
+      </div>
+    </div>
+  </div>
+  <p class="choose">Выбери тур</p>
+</div>
 
-    </body>
+<div class="gallery">
+  <div class="gallery--hottours">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </div>
+  <div class="gallery--bestavia">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </div>
+  <div class="gallery--besthotels">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </div>
+</div>
+	</body>
 </html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Julius+Sans+One|Poiret+One');
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+  margin: 0px;
+  background: rgb(250, 250, 250);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 80px;
+  font-family: "Limelight";
+  color: #2b2f35;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.logo--travel {
+  font-family: "Poiret One";
+}
+
+.logo--o {
+  color: #FFCD40;
+}
+
+.logo--c {
+  color: #34C6CD;
+}
+
+.logo--o2 {
+  color: #9440D5;
+}
+
+.main_bg {
+  width: 100%;
+  height: 350px;
+  background-image:url('images/main_bg.jpg');
+  background-position: center;
+  background-size: 100% auto;
+  margin-top: 20px;
+  box-shadow: 0 0 15px grey;
+}
+
+.top_menu {
+  display: inline-block;
+}
+
+.top_menu li {
+  list-style: none;
+  display: inline;
+  padding-right: 15px;
+  margin-right: 10px;
+  font-family: "Comfortaa";
+  border-right: 1px solid rgb(100,100,100);
+}
+
+a:last-child li {
+  border-right: transparent;
+}
+
+.top_menu a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+
+.top_menu a:hover {
+  text-decoration: underline;
+}
+
+.tab_menu--top {
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+.tab_menu--top > div {
+  display: inline-block;
+  box-shadow: 0 0 15px lightgray;
+  text-align: center;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.tab_menu--top div i {
+  color: white;
+  margin: auto;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.tab-menu--top--tours {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FFCD40;
+  transform: scale(1.25)
+}
+
+.tab-menu--top--avia {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #34C6CD;
+}
+
+.tab-menu--top--hotels {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9440D5;
+}
+
+.tab_menu--tabs {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  top: -390px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+
+.tab_menu--tabs--tab {
+  padding: 10px;
+}
+
+div > div > div > div > div.search-form-submit > button {
+  background: #FFCD40;
+}
+
+.tab_menu--tabs--tab.tours {
+  display: none;
+}
+
+.tab_menu--tabs--tab.avia {
+  display: block;
+}
+
+.tab_menu--tabs--tab.hotels {
+  display: none;
+}
+
+
+.choose {
+  color: white;
+  font-size: 58px;
+  font-family: "Comfortaa";
+  position: relative;
+  top: -390px;
+  text-align:center;
+  text-shadow: 0 0 5px grey;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.gallery div {
+  position: relative;
+  top: -170px;
+  height: 380px;
+  width: 380px;
+}
+
+.gallery--hottours {
+  background-image: url("https://images.unsplash.com/photo-1452561802015-953ab78c4526?auto=format&fit=crop&w=2077&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: auto 400px;
+}
+
+.gallery--bestavia {
+  background-image: url("https://images.unsplash.com/photo-1492136344046-866c85e0bf04?auto=format&fit=crop&w=1345&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: auto 400px;
+}
+
+.gallery--besthotels {
+  background-image: url("https://t-ec.bstatic.com/images/hotel/max1024x768/110/110785275.jpg");
+  background-size: auto 400px;
+}
+
+.gallery .fa {
+  color: white;
+  line-height: 400px;
+  font-size: 38px;
+  padding: 5px;
+  
+}
+
+.gallery .fa:last-child {
+  float: right;
+}
